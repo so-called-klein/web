@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lazy Crochetier - Handmade Crochet Goods</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind Configuration (for Inter font and custom colors) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#0D9488', // Teal 600
+                        'secondary': '#D6D3CD', // Stone 300
+                        'background': '#FAFAF9', // Stone 50 (Off-white)
+                        'text-dark': '#1C1917', // Stone 900
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Optional custom styles for subtle shadow/depth */
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body class="font-sans bg-background text-text-dark">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold text-primary tracking-wide">
+                The Lazy Crochetier
+            </h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#product" class="text-sm font-medium hover:text-primary transition duration-300">Product</a>
+                <a href="#quality" class="text-sm font-medium hover:text-primary transition duration-300">Quality</a>
+                <a href="#reviews" class="text-sm font-medium hover:text-primary transition duration-300">Reviews</a>
+            </nav>
+            <a href="#buy" class="px-4 py-2 bg-primary text-white text-sm font-semibold rounded-full hover:bg-teal-700 transition duration-300 shadow-lg">
+                Shop Now
+            </a>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section id="hero" class="pt-16 pb-24 bg-secondary/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+            <!-- Hero Text Content -->
+            <div class="order-2 md:order-1">
+                <p class="text-sm font-semibold text-primary uppercase tracking-widest mb-2">Introducing Our Best Seller</p>
+                <h2 class="text-5xl sm:text-6xl font-extrabold leading-tight mb-6">
+                    The Cloud Cuddler
+                    <span class="text-primary block mt-2">Handmade with Love.</span>
+                </h2>
+                <p class="text-lg text-stone-600 mb-8 max-w-lg">
+                    More than a toy, it's a cozy friend. Each Cloud Cuddler is meticulously hand-crocheted from organic yarn, making it the perfect, softest gift for any age.
+                </p>
+                <div class="space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="#buy" class="inline-block px-10 py-4 bg-primary text-white text-lg font-bold rounded-full hover:bg-teal-700 transition duration-300 transform hover:scale-105 shadow-xl">
+                        Get Yours Today - $ 4.99
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="order-1 md:order-2 flex justify-center">
+                <img
+                    src="https://placehold.co/600x450/A7D2CB/FFFFFF?text=Handmade+Crochet+Plush"
+                    alt="A high-quality, close-up image of a charming crochet plush toy, the Cloud Cuddler."
+                    class="w-full max-w-md lg:max-w-lg h-auto rounded-3xl object-cover card-shadow transition duration-500 ease-in-out hover:shadow-2xl"
+                    onerror="this.onerror=null;this.src='https://placehold.co/600x450/0D9488/ffffff?text=Crochet+Product+Placeholder';"
+                />
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Product Description & Features -->
+    <section id="product" class="py-20 lg:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-extrabold text-text-dark mb-4">Crafted for Quality & Comfort</h3>
+                <p class="text-xl text-stone-600 max-w-3xl mx-auto">Discover what makes our handmade creations truly special and enduring.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 rounded-2xl card-shadow hover:shadow-lg transition duration-300">
+                    <svg class="w-10 h-10 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    <h4 class="text-xl font-bold mb-2">100% Organic Yarn</h4>
+                    <p class="text-stone-600">Soft, safe, and sustainable. We use only GOTS-certified organic cotton and wool, free from harmful dyes and toxins.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white p-6 rounded-2xl card-shadow hover:shadow-lg transition duration-300">
+                    <svg class="w-10 h-10 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <h4 class="text-xl font-bold mb-2">Lifetime Durability</h4>
+                    <p class="text-stone-600">Built to be loved. Each stitch is tightly woven to withstand years of play, cuddles, and even machine washing.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white p-6 rounded-2xl card-shadow hover:shadow-lg transition duration-300">
+                    <svg class="w-10 h-10 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.221a.75.75 0 01.702 0l1.458.788c.11.06.216.098.322.098h1.8c.277 0 .538.113.729.304l1.414 1.414c.191.191.304.452.304.729v1.8c0 .106.038.212.098.322l.788 1.458c.06.11.06.24 0 .35l-.788 1.458a.75.75 0 01-.098.322v1.8c0 .277-.113.538-.304.729l-1.414 1.414a.75.75 0 01-.729.304h-1.8a.75.75 0 01-.322.098l-1.458.788a.75.75 0 01-.702 0l-1.458-.788a.75.75 0 01-.322-.098h-1.8a.75.75 0 01-.729-.304l-1.414-1.414a.75.75 0 01-.304-.729v-1.8a.75.75 0 01-.098-.322l-.788-1.458a.75.75 0 010-.35l.788-1.458a.75.75 0 01.098-.322v-1.8a.75.75 0 01.304-.729l1.414-1.414a.75.75 0 01.729-.304h1.8a.75.75 0 01.322-.098l1.458-.788zM12 15a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                    <h4 class="text-xl font-bold mb-2">Unique & Hand-Finished</h4>
+                    <p class="text-stone-600">No two are exactly alike. Every product is individually finished by our artisan, ensuring a truly unique piece you won't find anywhere else.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Quality Guarantee (CTA Focus) -->
+    <section id="quality" class="py-20 lg:py-28 bg-primary/10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-primary mb-4">Our Guarantee: 100% Handcrafted Joy</h3>
+            <p class="text-lg text-stone-700 mb-8">
+                We stand behind the quality of every loop and knot. If your crochet item doesn't bring a smile, we offer a hassle-free return within 30 days.
+            </p>
+            <a href="#buy" class="inline-block px-8 py-3 bg-text-dark text-white text-lg font-semibold rounded-full hover:bg-gray-700 transition duration-300 transform hover:scale-105 shadow-xl">
+                See Available Products
+            </a>
+        </div>
+    </section>
+
+    <!-- 4. Testimonials / Reviews -->
+    <section id="reviews" class="py-20 lg:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-extrabold text-text-dark">What Our Customers Say</h3>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-secondary/50">
+                    <div class="flex text-yellow-500 mb-3">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.63-.921 1.93 0l2.583 7.942 8.332.607c.96.07.72.688.02.585l-6.39 4.382 2.1 7.42c.24.843-.65.65-1.29-.44l-6.72-4.908-6.72 4.908c-.64 1.09-.94 1.28-.7-.44l2.1-7.42L.034 11.054c-.7-.103-.94-.515-.02-.585l8.332-.607L9.049 2.927z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.63-.921 1.93 0l2.583 7.942 8.332.607c.96.07.72.688.02.585l-6.39 4.382 2.1 7.42c.24.843-.65.65-1.29-.44l-6.72-4.908-6.72 4.908c-.64 1.09-.94 1.28-.7-.44l2.1-7.42L.034 11.054c-.7-.103-.94-.515-.02-.585l8.332-.607L9.049 2.927z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.63-.921 1.93 0l2.583 7.942 8.332.607c.96.07.72.688.02.585l-6.39 4.382 2.1 7.42c.24.843-.65.65-1.29-.44l-6.72-4.908-6.72 4.908c-.64 1.09-.94 1.28-.7-.44l2.1-7.42L.034 11.054c-.7-.103-.94-.515-.02-.585l8.332-.607L9.049 2.927z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.63-.921 1.93 0l2.583 7.942 8.332.607c.96.07.72.688.02.585l-6.39 4.382 2.1 7.42c.24.843-.65.65-1.29-.44l-6.72-4.908-6.72 4.908c-.64 1.09-.94 1.28-.7-.44l2.1-7.42L.034 11.054c-.7-.103-.94-.515-.02-.585l8.332-.607L9.049 2.927z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.63-.921 1.93 0l2.583 7.942 8.332.607c.96.07.72.688.02.585l-6.39 4.382 2.1 7.42c.24.843-.65.65-1.29-.44l-6.72-4.908-6.72 4.908c-.64 1.09-.94 1.28-.7-.44l2.1-7.42L.034 11.054c-.7-.103-.94-.515-.02-.585l8.332-.607L9.049 2.927z"/></svg>
+                    </div>
+                    <p class="italic text-stone-700 mb-4">"Absolutely adore my Cloud Cuddler! The yarn is so soft, and you can truly see the care and detail in every stitch. It's the perfect size for desk decor."</p>
+                    <p class="font-semibold text-text-dark">- Jessica T.</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-secondary/50">
+                    <div class="flex text-yellow-500 mb-3">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.63-.921 1.93 0l2.583 7.942 8.332.607c.96.07.72.688.02.585l-6.39 4.382 2.1 7.42c.24.843-.65.65-1.29-.44l-6.72-4.908-6.72 4.908c-.64 1.09-.94 1.28-.7-.44l2.1-7.42L.034 11.054c-.7-.103-.94-.515-.02-.585l8.332-.607L9.049 2.927z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.63-.921 1.93 0l2.583 7.942 8.332.607c.96.07.72.688.02.585l-6.39 4.382 2.1 7.42c.24.843-.65.65-1.29-.44l-6.72-4.908-6.72 4.908c-.64 1.09-.94 1.28-.7-.44l2.1-7.42L.034 11.054c-.7-.103-.94-.515-.02-.585l8.332-.607L9.049 2.927z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.63-.921 1.93 0l2.583 7.942 8.332.607c.96.07.72.688.02.585l-6.39 4.382 2.1 7.42c.24.843-.65.65-1.29-.44l-6.72-4.908-6.72 4.908c-.64 1.09-.94 1.28-.7-.44l2.1-7.42L.034 11.054c-.7-.103-.94-.515-.02-.585l8.332-.607L9.049 2.927z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.63-.921 1.93 0l2.583 7.942 8.332.607c.96.07.72.688.02.585l-6.39 4.382 2.1 7.42c.24.843-.65.65-1.29-.44l-6.72-4.908-6.72 4.908c-.64 1.09-.94 1.28-.7-.44l2.1-7.42L.034 11.054c-.7-.103-.94-.515-.02-.585l8.332-.607L9.049 2.927z"/></svg>
+                        <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.63-.921 1.93 0l2.583 7.942 8.332.607c.96.07.72.688.02.585l-6.39 4.382 2.1 7.42c.24.843-.65.65-1.29-.44l-6.72-4.908-6.72 4.908c-.64 1.09-.94 1.28-.7-.44l2.1-7.42L.034 11.054c-.7-.103-.94-.515-.02-.585l8.332-.607L9.049 2.927z"/></svg>
+                    </div>
+                    <p class="italic text-stone-700 mb-4">"I bought this for my niece, and she hasn't put it down! The quality is amazing—it survived a muddy park trip and a wash beautifully. Highly recommend!"</p>
+                    <p class="font-semibold text-text-dark">- Sarah P.</p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-secondary/50">
+                    <div class="flex text-yellow-500 mb-3">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.63-.921 1.93 0l2.583 7.942 8.332.607c.96.07.72.688.02.585l-6.39 4.382 2.1 7.42c.24.843-.65.65-1.29-.44l-6.72-4.908-6.72 4.908c-.64 1.09-.94 1.28-.7-.44l2.1-7.42L.034 11.054c-.7-.103-.94-.515-.02-.585l8.332-.607L9.049 2.927z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.63-.921 1.93 0l2.583 7.942 8.332.607c.96.07.72.688.02.585l-6.39 4.382 2.1 7.42c.24.843-.65.65-1.29-.44l-6.72-4.908-6.72 4.908c-.64 1.09-.94 1.28-.7-.44l2.1-7.42L.034 11.054c-.7-.103-.94-.515-.02-.585l8.332-.607L9.049 2.927z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.63-.921 1.93 0l2.583 7.942 8.332.607c.96.07.72.688.02.585l-6.39 4.382 2.1 7.42c.24.843-.65.65-1.29-.44l-6.72-4.908-6.72 4.908c-.64 1.09-.94 1.28-.7-.44l2.1-7.42L.034 11.054c-.7-.103-.94-.515-.02-.585l8.332-.607L9.049 2.927z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.63-.921 1.93 0l2.583 7.942 8.332.607c.96.07.72.688.02.585l-6.39 4.382 2.1 7.42c.24.843-.65.65-1.29-.44l-6.72-4.908-6.72 4.908c-.64 1.09-.94 1.28-.7-.44l2.1-7.42L.034 11.054c-.7-.103-.94-.515-.02-.585l8.332-.607L9.049 2.927z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.63-.921 1.93 0l2.583 7.942 8.332.607c.96.07.72.688.02.585l-6.39 4.382 2.1 7.42c.24.843-.65.65-1.29-.44l-6.72-4.908-6.72 4.908c-.64 1.09-.94 1.28-.7-.44l2.1-7.42L.034 11.054c-.7-.103-.94-.515-.02-.585l8.332-.607L9.049 2.927z"/></svg>
+                    </div>
+                    <p class="italic text-stone-700 mb-4">"I'm a repeat customer. The craftsmanship here is unmatched. It feels much more expensive than it is—true heirloom quality handmade goods."</p>
+                    <p class="font-semibold text-text-dark">- Michael R.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Final Call to Action -->
+    <section id="buy" class="py-20 lg:py-28 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-4xl font-extrabold mb-4">Ready to Bring Cozy Home?</h3>
+            <p class="text-xl opacity-90 mb-8">Limited quantities are available since every item is handmade. Don't miss out on owning a unique piece of art.</p>
+            <a href="#" class="inline-block px-12 py-5 bg-white text-primary text-xl font-bold rounded-full hover:bg-stone-200 transition duration-300 transform hover:scale-105 shadow-2xl">
+                ORDER YOURS NOW
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-dark py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-stone-400 text-sm">
+            <p>&copy; 2025 The Cozy Stitch. All rights reserved. | Handmade Crochet Love.</p>
+            <div class="mt-2 space-x-4">
+                <a href="#" class="hover:text-primary transition duration-300">Privacy Policy</a>
+                <span class="text-stone-600">|</span>
+                <a href="#" class="hover:text-primary transition duration-300">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
