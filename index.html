@@ -40,9 +40,11 @@
                 The Lazy Crochetier
             </h1>
             <nav class="hidden md:flex space-x-8">
-                <a href="#product" class="text-sm font-medium hover:text-primary transition duration-300">Product</a>
-                <a href="#quality" class="text-sm font-medium hover:text-primary transition duration-300">Quality</a>
-                <a href="#reviews" class="text-sm font-medium hover:text-primary transition duration-300">Reviews</a>
+                <a href="#Home" class="text-sm font-medium hover:text-primary transition duration-300">Home</a>
+                <a href="#Shop" class="text-sm font-medium hover:text-primary transition duration-300">Shop</a>
+                <a href="#About" class="text-sm font-medium hover:text-primary transition duration-300">About</a>
+                <a href="#Contact" class="text-sm font-medium hover:text-primary transition duration-300">Contact</a>
+                
             </nav>
             <a href="#buy" class="px-4 py-2 bg-primary text-white text-sm font-semibold rounded-full hover:bg-teal-700 transition duration-300 shadow-lg">
                 Shop Now
@@ -81,6 +83,178 @@
             </div>
         </div>
     </section>
+    <body>
+
+        <!-- 4. Featured Products Section (Referenced in the video: [00:01:52]) -->
+        <section id="featured-products" class="py-16 px-4 text-center">
+            <h2 class="text-4xl font-extrabold text-secondary-dark mb-4">Featured Products</h2>
+            <p class="text-lg text-gray-500 mb-12">Summer Collection New Modern Design</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product Card 1 -->
+                <div class="product-card bg-white p-4 rounded-xl shadow-lg border-2 border-transparent hover:border-primary-blue transition duration-300">
+                    <img src="https://placehold.co/400x400/FADBD8/2C3E50?text=T-Shirt+1" alt="T-Shirt" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <p class="text-sm text-gray-500">Brand Name</p>
+                    <h3 class="text-lg font-semibold text-secondary-dark">Casual Loose T-Shirt</h3>
+                    <div class="text-yellow-400 my-2">★★★★★</div>
+                    <div class="flex justify-between items-center mt-3">
+                        <p class="text-2xl font-bold text-accent-red">$78.00</p>
+                        <button class="bg-green-500 p-2 rounded-full text-white shadow-md hover:bg-green-600 transition duration-150">
+                            <!-- Add to Cart Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4"/><line x1="3" x2="21" y1="6" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card bg-white p-4 rounded-xl shadow-lg border-2 border-transparent hover:border-primary-blue transition duration-300">
+                    <img src="https://placehold.co/400x400/D5DBDB/2C3E50?text=Shirt+2" alt="Shirt" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <p class="text-sm text-gray-500">Brand Name</p>
+                    <h3 class="text-lg font-semibold text-secondary-dark">Stylish Formal Shirt</h3>
+                    <div class="text-yellow-400 my-2">★★★★☆</div>
+                    <div class="flex justify-between items-center mt-3">
+                        <p class="text-2xl font-bold text-accent-red">$99.50</p>
+                        <button class="bg-green-500 p-2 rounded-full text-white shadow-md hover:bg-green-600 transition duration-150">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4"/><line x1="3" x2="21" y1="6" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                 <!-- Product Card 3 -->
+                <div class="product-card bg-white p-4 rounded-xl shadow-lg border-2 border-transparent hover:border-primary-blue transition duration-300">
+                    <img src="https://placehold.co/400x400/A3E4D7/2C3E50?text=Pants+3" alt="Pants" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <p class="text-sm text-gray-500">Brand Name</p>
+                    <h3 class="text-lg font-semibold text-secondary-dark">Comfortable Cargo Pants</h3>
+                    <div class="text-yellow-400 my-2">★★★★★</div>
+                    <div class="flex justify-between items-center mt-3">
+                        <p class="text-2xl font-bold text-accent-red">$125.00</p>
+                        <button class="bg-green-500 p-2 rounded-full text-white shadow-md hover:bg-green-600 transition duration-150">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4"/><line x1="3" x2="21" y1="6" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card bg-white p-4 rounded-xl shadow-lg border-2 border-transparent hover:border-primary-blue transition duration-300">
+                    <img src="https://placehold.co/400x400/AED6F1/2C3E50?text=Jacket+4" alt="Jacket" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <p class="text-sm text-gray-500">Brand Name</p>
+                    <h3 class="text-lg font-semibold text-secondary-dark">Lightweight Denim Jacket</h3>
+                    <div class="text-yellow-400 my-2">★★★★☆</div>
+                    <div class="flex justify-between items-center mt-3">
+                        <p class="text-2xl font-bold text-accent-red">$159.00</p>
+                        <button class="bg-green-500 p-2 rounded-full text-white shadow-md hover:bg-green-600 transition duration-150">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4"/><line x1="3" x2="21" y1="6" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 (Duplicated to fill space) -->
+                <div class="product-card bg-white p-4 rounded-xl shadow-lg border-2 border-transparent hover:border-primary-blue transition duration-300">
+                    <img src="https://placehold.co/400x400/FADBD8/2C3E50?text=T-Shirt+5" alt="T-Shirt" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <p class="text-sm text-gray-500">New Arrivals</p>
+                    <h3 class="text-lg font-semibold text-secondary-dark">Modern Fit Polo</h3>
+                    <div class="text-yellow-400 my-2">★★★★☆</div>
+                    <div class="flex justify-between items-center mt-3">
+                        <p class="text-2xl font-bold text-accent-red">$55.00</p>
+                        <button class="bg-green-500 p-2 rounded-full text-white shadow-md hover:bg-green-600 transition duration-150">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4"/><line x1="3" x2="21" y1="6" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 6 (Duplicated to fill space) -->
+                <div class="product-card bg-white p-4 rounded-xl shadow-lg border-2 border-transparent hover:border-primary-blue transition duration-300">
+                    <img src="https://placehold.co/400x400/D5DBDB/2C3E50?text=Shirt+6" alt="Shirt" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <p class="text-sm text-gray-500">New Arrivals</p>
+                    <h3 class="text-lg font-semibold text-secondary-dark">Oversize Hoodie</h3>
+                    <div class="text-yellow-400 my-2">★★★★★</div>
+                    <div class="flex justify-between items-center mt-3">
+                        <p class="text-2xl font-bold text-accent-red">$85.00</p>
+                        <button class="bg-green-500 p-2 rounded-full text-white shadow-md hover:bg-green-600 transition duration-150">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4"/><line x1="3" x2="21" y1="6" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                 <!-- Product Card 7 (Duplicated to fill space) -->
+                <div class="product-card bg-white p-4 rounded-xl shadow-lg border-2 border-transparent hover:border-primary-blue transition duration-300">
+                    <img src="https://placehold.co/400x400/A3E4D7/2C3E50?text=Pants+7" alt="Pants" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <p class="text-sm text-gray-500">Trending</p>
+                    <h3 class="text-lg font-semibold text-secondary-dark">High-Waist Jeans</h3>
+                    <div class="text-yellow-400 my-2">★★★★☆</div>
+                    <div class="flex justify-between items-center mt-3">
+                        <p class="text-2xl font-bold text-accent-red">$110.00</p>
+                        <button class="bg-green-500 p-2 rounded-full text-white shadow-md hover:bg-green-600 transition duration-150">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4"/><line x1="3" x2="21" y1="6" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 8 (Duplicated to fill space) -->
+                <div class="product-card bg-white p-4 rounded-xl shadow-lg border-2 border-transparent hover:border-primary-blue transition duration-300">
+                    <img src="https://placehold.co/400x400/AED6F1/2C3E50?text=Dress+8" alt="Jacket" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <p class="text-sm text-gray-500">Best Seller</p>
+                    <h3 class="text-lg font-semibold text-secondary-dark">Elegant Summer Dress</h3>
+                    <div class="text-yellow-400 my-2">★★★★★</div>
+                    <div class="flex justify-between items-center mt-3">
+                        <p class="text-2xl font-bold text-accent-red">$210.00</p>
+                        <button class="bg-green-500 p-2 rounded-full text-white shadow-md hover:bg-green-600 transition duration-150">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4"/><line x1="3" x2="21" y1="6" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Banner Section (Referenced in the video: [00:02:39]) -->
+        <section id="banner-area" class="py-12 px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Large Banner 1 -->
+                <div class="banner-large-1 h-64 rounded-xl shadow-xl p-8 flex flex-col justify-center text-white">
+                    <p class="text-xl font-medium mb-1">Crazy Deals</p>
+                    <h3 class="text-4xl font-extrabold mb-3">Buy 1 Get 1 Free</h3>
+                    <p class="text-lg mb-6">The best classic dress is on sale at EShop</p>
+                    <button class="w-40 py-2 bg-accent-red text-white font-semibold rounded-full hover:bg-opacity-90 transition duration-150 border-2 border-white">
+                        Learn More
+                    </button>
+                </div>
+                <!-- Large Banner 2 -->
+                <div class="banner-large-2 h-64 rounded-xl shadow-xl p-8 flex flex-col justify-center text-white">
+                    <p class="text-xl font-medium mb-1">Spring/Summer</p>
+                    <h3 class="text-4xl font-extrabold mb-3">Upcomming Season</h3>
+                    <p class="text-lg mb-6">The best products for the new season are here</p>
+                    <button class="w-40 py-2 bg-primary-blue text-white font-semibold rounded-full hover:bg-opacity-90 transition duration-150 border-2 border-white">
+                        Collection
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Newsletter Section (Referenced in the video: [00:02:46]) -->
+        <section id="newsletter" class="bg-secondary-dark py-16 mt-12 mb-12 rounded-xl shadow-2xl px-4 text-center md:text-left">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+                <div class="text-white mb-6 md:mb-0">
+                    <h2 class="text-4xl font-extrabold mb-2">Sign Up For Newsletters</h2>
+                    <p class="text-lg text-gray-400">Get E-mail updates about our latest shop and <span class="text-yellow-400 font-semibold">special offers.</span></p>
+                </div>
+                <div class="w-full max-w-lg">
+                    <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-2">
+                        <input type="email" id="newsletter-email" placeholder="Your email address" class="p-3 w-full rounded-xl focus:ring-primary-blue focus:border-primary-blue border-transparent transition duration-150" required>
+                        <button onclick="subscribeNewsletter()" class="px-6 py-3 bg-primary-blue text-white font-bold rounded-xl hover:bg-opacity-90 transition duration-150 shadow-lg">
+                            Sign Up
+                        </button>
+                    </div>
+                    <p id="newsletter-message" class="text-green-400 mt-3 text-center hidden">Thank you for subscribing!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+
+</body>
+</html>
+
 
     <!-- 2. Product Description & Features -->
     <section id="product" class="py-20 lg:py-28">
@@ -185,17 +359,53 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-text-dark py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-stone-400 text-sm">
-            <p>&copy; 2025 The Cozy Stitch. All rights reserved. | Handmade Crochet Love.</p>
-            <div class="mt-2 space-x-4">
-                <a href="#" class="hover:text-primary transition duration-300">Privacy Policy</a>
-                <span class="text-stone-600">|</span>
-                <a href="#" class="hover:text-primary transition duration-300">Contact Us</a>
+    <!-- 7. Footer (Referenced in the video: [02:21:58]) -->
+    <footer class="bg-gray-800 text-white py-10 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+            <!-- Column 1: Contact -->
+            <div>
+                <h4 class="text-xl font-bold mb-4 text-primary-blue">EShop</h4>
+                <p class="text-gray-400 mb-2"><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
+                <p class="text-gray-400 mb-2"><strong>Phone:</strong> +01 2222 365 / (+91) 01 2345 6789</p>
+                <p class="text-gray-400 mb-2"><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            </div>
+
+            <!-- Column 2: About -->
+            <div>
+                <h4 class="text-xl font-bold mb-4">About</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-primary-blue transition duration-150">About Us</a></li>
+                    <li><a href="#" class="hover:text-primary-blue transition duration-150">Delivery Information</a></li>
+                    <li><a href="#" class="hover:text-primary-blue transition duration-150">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-primary-blue transition duration-150">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: My Account -->
+            <div>
+                <h4 class="text-xl font-bold mb-4">My Account</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-primary-blue transition duration-150">Sign In</a></li>
+                    <li><a href="#" class="hover:text-primary-blue transition duration-150">View Cart</a></li>
+                    <li><a href="#" class="hover:text-primary-blue transition duration-150">My Wishlist</a></li>
+                    <li><a href="#" class="hover:text-primary-blue transition duration-150">Track My Order</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Install App -->
+            <div>
+                <h4 class="text-xl font-bold mb-4">Install App</h4>
+                <p class="text-gray-400 mb-4">From App Store or Google Play</p>
+                <div class="flex space-x-2">
+                    <img src="https://placehold.co/120x40/FFFFFF/000000?text=AppStore" alt="App Store badge" class="border-2 border-gray-600 rounded-lg">
+                    <img src="https://placehold.co/120x40/FFFFFF/000000?text=GooglePlay" alt="Google Play badge" class="border-2 border-gray-600 rounded-lg">
+                </div>
             </div>
         </div>
-    </footer>
 
+        <div class="mt-8 pt-4 border-t border-gray-700 text-center">
+            <p class="text-gray-500">© 2025 EShop, HTML CSS JS E-commerce Project. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
